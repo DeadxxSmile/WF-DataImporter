@@ -144,6 +144,40 @@ def getModInfo(modlist, mods):
             print(f"Unexpected format in mod_data: {mod_data}")
     
     return mod_info
+def combine_elemental_mods(modInfo):
+    combinedElements = {
+        "Corrosive": ("Electricity", "Toxin"),
+        "Blast": ("Heat", "Cold"),
+        "Radiation": ("Heat", "Electricity"),
+        "Gas": ("Heat", "Toxin"),
+        "Magnetic": ("Cold", "Electricity"),
+        "Viral": ("Cold", "Toxin")
+    }
+    
+    activeElements = {}
+    
+    for mod in modInfo:
+        for elem in mod["elementalInfo"]:
+            element = elem["element"]
+            percentage = float(elem["percentage"].strip("%")) / 100
+            if element in activeElements:
+                activeElements[element] += percentage
+            else:
+                activeElements[element] = percentage
+    
+    combinedMods = {}
+    
+    for combo, elements in combinedElements.items():
+        if all(elem in activeElements for elem in elements):
+            combinedMods[combo] = activeElements[elements[0]] + activeElements[elements[1]]
+          
+            del activeElements[elements[0]]
+            del activeElements[elements[1]]
+    
+   
+    combinedMods.update(activeElements)
+    
+    return combinedMods
 
 def weaponDamageQuantised(weapon, mod_info):
     damageCalcGame = []
@@ -151,6 +185,7 @@ def weaponDamageQuantised(weapon, mod_info):
     base_damage = weapon["totalDamage"]
     quantum = weapon["quanta"]
     
+   
     for damageType, base_value in weapon["damageIPS"].items():
         modVal = 0
         for mod in mod_info:
@@ -163,12 +198,12 @@ def weaponDamageQuantised(weapon, mod_info):
         damageCalcGame.append({"type": damageType, "value": quantDamageGame})
         damageCalcHUD.append({"type": damageType, "value": quantDamageHUD})
     
+  
+    combined_mods = combine_elemental_mods(mod_info)
+    
+   
     for damageType, base_value in weapon["damageED"].items():
-        modVal = 0
-        for mod in mod_info:
-            for elem in mod["elementalInfo"]:
-                if damageType == elem["element"]:
-                    modVal += float(elem["percentage"].strip("%")) / 100  
+        modVal = combined_mods.get(damageType, 0)
         
         quantDamageGame = QEDGame(base_value, base_damage, modVal, quantum)
         quantDamageHUD = QEDHUD(base_value, base_damage, modVal, quantum)
@@ -237,8 +272,8 @@ def main():
         bane = banes(modInfo,game,damageMods)
         
         print("Final Game Damage is: ", finalDMGGame)
-        if bane > 0:
-            print("Applied bane damage",bane)
+        
+        print("Applied bane damage",bane)
         print("Final HUD Damage is: ", finalDMGHUD)
     else:
         print(f"Weapon {name} not found.")
