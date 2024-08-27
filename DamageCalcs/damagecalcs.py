@@ -345,9 +345,11 @@ def main():
         bane1 = banes(modInfo,game,damageMods)
         bane2 = banes(modInfo,enemy,damageMods)
         print("Final Game Damage is: ", finalDMGGame)
-        print("Final Enemy Damage is: ", finalDMGEnemy)
         print("Applied bane damage (true): ",bane1)
+        print("------------------------------------------------")
+        print("Final Enemy Damage is: ", finalDMGEnemy)
         print("Applied bane damage (armour): ", bane2)
+        print("------------------------------------------------")
         print("Final HUD Damage is: ", finalDMGHUD)
     else:
         print(f"Weapon {name} not found.")
