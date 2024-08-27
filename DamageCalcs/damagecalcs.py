@@ -19,7 +19,7 @@ def QIPSGame(baseIPS, modIPS, quantum):
 
 def QEDGame(baseED, totalDMG, EDMOds, quantum):
     if baseED == 0:
-        return round(totalDMG * EDMOds / quantum) * quantum
+        return round(round(totalDMG * EDMOds / quantum) * quantum,3)
     else:
         return round(round((baseED + totalDMG * EDMOds) / quantum) * quantum, 3)
 
@@ -215,8 +215,7 @@ def weaponDamageQuantised(weapon, mod_info):
 
 def damageModifiers(modInfo):
     modVal = 0
-    pattern = r"\+(\d+%) Damage"  # Regex pattern to match the damage modifier
-
+    pattern = r"\+(\d+%) Damage"  
     for mod in modInfo:
         for stat in mod["otherStats"]:
             match = re.match(pattern, stat)
