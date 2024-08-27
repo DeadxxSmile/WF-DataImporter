@@ -2,7 +2,6 @@
     "ExportEnemyValues" : [
         {
             "name": "Grineer",
-            
             "Impact": 1.5,
             "Puncture": 1,
             "Slash": 1,
@@ -41,7 +40,6 @@
         },
         {
             "name": "Corpus",
-            
             "Impact": 1,
             "Puncture": 1.5,
             "Slash": 1,

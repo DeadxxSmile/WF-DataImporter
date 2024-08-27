@@ -19,9 +19,55 @@ def QIPSGame(baseIPS, modIPS, quantum):
 
 def QEDGame(baseED, totalDMG, EDMOds, quantum):
     if baseED == 0:
-        return round(round(totalDMG * EDMOds / quantum) * quantum,3)
+        return round(round(totalDMG * EDMOds / quantum) * quantum,3)#check
+        
     else:
-        return round(round((baseED + totalDMG * EDMOds) / quantum) * quantum, 3)
+        return round(round((baseED + totalDMG * EDMOds) / quantum) * quantum, 3)#check
+
+def enemyGameIPS(baseIPS, modIPS, quantum, armour, enemyVal): 
+   
+    IPS = round(round((baseIPS * (1 + modIPS)) / quantum) * quantum, 3) * ((1 - armour) * enemyVal)
+
+    return IPS
+
+def enemyGameQED(baseED, totalDMG, EDMods, quantum, armour, enemyVal):
+    if baseED == 0:
+        QED = round(round((totalDMG*EDMods)/quantum,0)*quantum,3)*((1-armour)*enemyVal)
+    else: 
+        QED = round(round((baseED+totalDMG*EDMods)/quantum,0)*quantum,3)*((1-armour)*enemyVal)
+    return QED
+
+def loadEnemy(json_path):
+    with open(json_path) as file:
+        data = json.load(file)
+        
+    enemies = {}
+    
+    for enemy in data["ExportEnemyValues"]:
+        enemyName = enemy.get("name", "Unnamed Enemy")
+        
+        if enemyName not in enemies:
+            enemies[enemyName] = []
+            
+        enemies[enemyName].append({
+            "Impact": enemy.get("Impact", 1),
+            "Puncture": enemy.get("Puncture", 1),
+            "Slash": enemy.get("Slash", 1),
+            "Heat": enemy.get("Heat", 1),
+            "Cold": enemy.get("Cold", 1),
+            "Electricity": enemy.get("Electricity", 1),
+            "Toxin": enemy.get("Toxin", 1),
+            "Blast": enemy.get("Blast", 1),
+            "Magnetic": enemy.get("Magnetic", 1),
+            "Viral": enemy.get("Viral", 1),
+            "Corrosive": enemy.get("Corrosive", 1),
+            "Void": enemy.get("Void", 1),
+            "Radiation": enemy.get("Radiation", 1),
+            "Gas": enemy.get("Gas", 1),
+            "True": enemy.get("True", 1)
+        })
+    return enemies
+
 
 def loadMods(json_path):
     with open(json_path) as file:
@@ -144,6 +190,12 @@ def getModInfo(modlist, mods):
             print(f"Unexpected format in mod_data: {mod_data}")
     
     return mod_info
+
+def getEnemyInfo(enemy, name):
+    enemy_data = enemy.get(name, [{}])[0]
+    return enemy_data
+    
+
 def combine_elemental_mods(modInfo):
     combinedElements = {
         "Corrosive": ("Electricity", "Toxin"),
@@ -179,9 +231,10 @@ def combine_elemental_mods(modInfo):
     
     return combinedMods
 
-def weaponDamageQuantised(weapon, mod_info):
+def weaponDamageQuantised(weapon, mod_info, enemyInfo, armour):
     damageCalcGame = []
     damageCalcHUD = []
+    damageCalcEnemy = []
     base_damage = weapon["totalDamage"]
     quantum = weapon["quanta"]
     
@@ -194,10 +247,10 @@ def weaponDamageQuantised(weapon, mod_info):
                     modVal += float(ips["percentage"].strip("%")) / 100  
         quantDamageGame = QIPSGame(base_value, modVal, quantum)
         quantDamageHUD = QIPSHud(base_value, modVal, quantum)
-        
+        quantDamageEnemy = enemyGameIPS(base_value,modVal, quantum, armour, enemyInfo.get(damageType, 1))
         damageCalcGame.append({"type": damageType, "value": quantDamageGame})
         damageCalcHUD.append({"type": damageType, "value": quantDamageHUD})
-    
+        damageCalcEnemy.append({"type": damageType, "value": quantDamageEnemy})
   
     combined_mods = combine_elemental_mods(mod_info)
     
@@ -207,11 +260,13 @@ def weaponDamageQuantised(weapon, mod_info):
         
         quantDamageGame = QEDGame(base_value, base_damage, modVal, quantum)
         quantDamageHUD = QEDHUD(base_value, base_damage, modVal, quantum)
-        
+        quantDamageEnemy = enemyGameQED(base_value, base_damage, modVal, quantum, armour, enemyInfo.get(damageType,1))
         damageCalcGame.append({"type": damageType, "value": quantDamageGame})
         damageCalcHUD.append({"type": damageType, "value": quantDamageHUD})
+        damageCalcEnemy.append({"type": damageType, "value": quantDamageEnemy})
     
-    return damageCalcGame, damageCalcHUD
+    
+    return damageCalcGame, damageCalcHUD, damageCalcEnemy
 
 def damageModifiers(modInfo):
     modVal = 0
@@ -225,7 +280,10 @@ def damageModifiers(modInfo):
 
     
     return modVal
-                
+
+def armourModifer(num)                :
+    armour = 0.9*math.sqrt(num/2700)
+    return armour
 def banes(modInfo, damageCalced, modifiers):
     pattern = r"x(\d+\.\d+) Damage to (.+)"
     for mod in modInfo:
@@ -238,41 +296,58 @@ def banes(modInfo, damageCalced, modifiers):
                 return bane_damage  
     return None  
 
-def dmgTotals(dmgGame, dmgHud):
+def dmgTotals(dmgGame, dmgHud, dmgEnemy):
     gameDMG = 0
     hudDMG = 0
+    enemyDMG = 0
     for dmg in dmgGame:
         gameDMG += dmg['value']
     for dmg in dmgHud:
         hudDMG += dmg['value']
-    return gameDMG, hudDMG
+    for dmg in dmgEnemy:
+        enemyDMG += dmg['value']
+    return gameDMG, hudDMG, enemyDMG
     
 def main():
     weapons = loadWeps('../JSON/2024-08-25/ExportWeapons_en_Cleaned.json')
     mods = loadMods('../JSON/2024-08-25/ExportUpgrades_en_Cleaned.json')
+    enemies = loadEnemy('../JSON/Custom/ExportEnemyValues.json')
+    ###############
+    #Set Hard Codes for testing
+    ###############
     
-    name = input("Weapon Name: ")
+    # name = input("Weapon Name: ")
+    name = "Baza Prime"
+    # modlist = []
+    modlist = ["Cryo Rounds", "Stormbringer", "Serration", "Piercing Caliber", "Bane of Grineer"]
+    # while True:
+    #     modIn = input('Enter mod name (done to finish): ')
+    #     if modIn.lower() == 'done':
+    #         break
+    #     modlist.append(modIn)
+        
+    # nameEn = input("Enemy type Name: ")
+    nameEn = "Grineer"
+    # armourVal = float(input("Armour Value: "))
+    armourVal = 389
     
-    modlist = []
-    while True:
-        modIn = input('Enter mod name (done to finish): ')
-        if modIn.lower() == 'done':
-            break
-        modlist.append(modIn)
-    
-    modInfo = getModInfo(modlist, mods)  
+    enemyInfo = getEnemyInfo(enemies, nameEn)
+    modInfo = getModInfo(modlist, mods) 
+    armour = armourModifer(armourVal)
     if name in weapons:
         weapon_data = weapons[name]
-        damageCalcGame, damageCalcHUD = weaponDamageQuantised(weapon_data, modInfo)
+        damageCalcGame, damageCalcHUD, damageCalcEnemy = weaponDamageQuantised(weapon_data, modInfo, enemyInfo, armour)
         damageMods = damageModifiers(modInfo)
-        game, hud = dmgTotals(damageCalcGame, damageCalcHUD)
+        game, hud, enemy = dmgTotals(damageCalcGame, damageCalcHUD, damageCalcEnemy)
         finalDMGGame = round(game+game*damageMods, 0)
         finalDMGHUD = round(hud+hud*damageMods,1)
-        bane = banes(modInfo,game,damageMods)
-        
+        finalDMGEnemy = round(enemy+enemy*damageMods,0)
+        bane1 = banes(modInfo,game,damageMods)
+        bane2 = banes(modInfo,enemy,damageMods)
         print("Final Game Damage is: ", finalDMGGame)
-        
-        print("Applied bane damage",bane)
+        print("Final Enemy Damage is: ", finalDMGEnemy)
+        print("Applied bane damage (true): ",bane1)
+        print("Applied bane damage (armour): ", bane2)
         print("Final HUD Damage is: ", finalDMGHUD)
     else:
         print(f"Weapon {name} not found.")
