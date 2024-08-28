@@ -231,6 +231,7 @@ def combine_elemental_mods(modInfo):
     
     return combinedMods
 
+
 def weaponDamageQuantised(weapon, mod_info, enemyInfo, armour):
     damageCalcGame = []
     damageCalcHUD = []
@@ -252,7 +253,7 @@ def weaponDamageQuantised(weapon, mod_info, enemyInfo, armour):
         damageCalcHUD.append({"type": damageType, "value": quantDamageHUD})
         damageCalcEnemy.append({"type": damageType, "value": quantDamageEnemy})
   
-    combined_mods = combine_elemental_mods(mod_info)
+    combined_mods = combine_elemental_mods(mod_info, weapon)
     
    
     for damageType, base_value in weapon["damageED"].items():
@@ -325,20 +326,51 @@ def dmgTotals(dmgGame, dmgHud, dmgEnemy):
     for dmg in dmgEnemy:
         enemyDMG += dmg['value']
     return gameDMG, hudDMG, enemyDMG
+
+def valence(weapon_data, element_name, percentage):
+    
+    if element_name in weapon_data["damageIPS"]:
+        weapon_data["damageIPS"][element_name] = weapon_data["damageIPS"].get(element_name, 0) + percentage * weapon_data["totalDamage"]
+    elif element_name in weapon_data["damageED"]:
+        weapon_data["damageED"][element_name] = weapon_data["damageED"].get(element_name, 0) + percentage * weapon_data["totalDamage"]
+    else:
+        print(f"Element {element_name} not found in the weapon data.")
+    weapon_data["totalDamage"] = round(sum(weapon_data["damageIPS"].values()) + sum(weapon_data["damageED"].values()),1)
     
 def main():
     weapons = loadWeps('../JSON/2024-08-25/ExportWeapons_en_Cleaned.json')
     mods = loadMods('../JSON/2024-08-25/ExportUpgrades_en_Cleaned.json')
     faction = loadFaction('../JSON/Custom/ExportEnemyValues.json')
+    intrinsicElement= ["Electricity", 0.378]
     ###############
     #Set Hard Codes for testing
     ###############
     
     # name = input("Weapon Name: ")
-    name = "Baza Prime"
+    name = "Kuva Kohm"
+    
     if name in weapons:
+        weapon_data = weapons[name]
+        pattern1 = r"^Kuva\s.*"
+        pattern2 = r"^Tenet\s.*"
+        if re.match(pattern1, name):
+            # na = input("Element Name: ")
+            # per = float(input("Percantage Element (number only): "))/100
+            # intrinsicElement.append(na)
+            # intrinsicElement.append(per)
+            valence(weapon_data, intrinsicElement[0], intrinsicElement[1])
+        elif re.match(pattern2, name):
+            # na = input("Element Name: ")
+            # # per = float(input("Percantage Element (number only): "))/100
+            # intrinsicElement.append(na)
+            # intrinsicElement.append(per)
+            valence(weapon_data, intrinsicElement[0], intrinsicElement[1])
+        
+        
+        print(weapon_data)
+        
         # modlist = []
-        modlist = ["Cryo Rounds", "Stormbringer", "Serration", "Piercing Caliber", "Bane of Grineer"]
+        modlist = ["Charged Shell", "Chilling Grasp", "Primed Point Blank", "Sweeping Serration", "Cleanse Grineer"]
         # while True:
         #     modIn = input('Enter mod name (done to finish): ')
         #     if modIn.lower() == 'done':
@@ -347,14 +379,14 @@ def main():
             
         # nameEn = input("Enemy type Name: ")
         factionName = "Grineer"
-        # armourVal = float(input("Armour Value: "))
-        enemyList = [57, 8, 500]
+        
+        enemyList = [35, 8, 500]
         
         factionInfo = getFactionInfo(faction, factionName)
         modInfo = getModInfo(modlist, mods) 
         armour = levelScaleArmour(enemyList[0], enemyList[1], enemyList[2])
     
-        weapon_data = weapons[name]
+        
         
         damageCalcGame, damageCalcHUD, damageCalcEnemy = weaponDamageQuantised(weapon_data, modInfo, factionInfo, armour)
         
@@ -375,6 +407,8 @@ def main():
         print("Applied bane damage (armour): ", bane2)
         print("------------------------------------------------")
         print("Final HUD Damage is: ", finalDMGHUD)
+        print("------------------------------------------------")
+        print(damageCalcEnemy)
     else:
         print(f"Weapon {name} not found.")
     
