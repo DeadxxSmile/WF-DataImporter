@@ -37,7 +37,7 @@ def enemyGameQED(baseED, totalDMG, EDMods, quantum, armour, enemyVal):
         QED = round(round((baseED+totalDMG*EDMods)/quantum,0)*quantum,3)*((1-armour)*enemyVal)
     return QED
 
-def loadEnemy(json_path):
+def loadFaction(json_path):
     with open(json_path) as file:
         data = json.load(file)
         
@@ -191,7 +191,7 @@ def getModInfo(modlist, mods):
     
     return mod_info
 
-def getEnemyInfo(enemy, name):
+def getFactionInfo(enemy, name):
     enemy_data = enemy.get(name, [{}])[0]
     return enemy_data
     
@@ -292,10 +292,28 @@ def banes(modInfo, damageCalced, modifiers):
             if match:
                 multiplier = float(match.group(1))
                 bane_damage = round((damageCalced + damageCalced * modifiers) * multiplier, None)
-                print(f"Bane applied: {stat}, Multiplier: {multiplier}, Damage: {bane_damage}")
+              
                 return bane_damage  
     return None  
-
+def levelScaleArmour(level, baseLevel, baseArmour):
+    levelDiff = level-baseLevel
+    
+    if levelDiff < 70:
+        s1 = 0
+    elif levelDiff > 80:
+        s1 = 1
+    else:
+        s1 = (levelDiff -70)/10
+    
+    f1 = 1+0.005*levelDiff**1.75
+    f2 = 1+0.4*levelDiff**0.75
+    armourMulti = (f1*(1-s1))+(f2*s1)
+    
+    finalArmour = min(baseArmour * armourMulti, 2700)
+    reduction = armourModifer(finalArmour)
+    return reduction
+    
+    
 def dmgTotals(dmgGame, dmgHud, dmgEnemy):
     gameDMG = 0
     hudDMG = 0
@@ -311,39 +329,45 @@ def dmgTotals(dmgGame, dmgHud, dmgEnemy):
 def main():
     weapons = loadWeps('../JSON/2024-08-25/ExportWeapons_en_Cleaned.json')
     mods = loadMods('../JSON/2024-08-25/ExportUpgrades_en_Cleaned.json')
-    enemies = loadEnemy('../JSON/Custom/ExportEnemyValues.json')
+    faction = loadFaction('../JSON/Custom/ExportEnemyValues.json')
     ###############
     #Set Hard Codes for testing
     ###############
     
     # name = input("Weapon Name: ")
     name = "Baza Prime"
-    # modlist = []
-    modlist = ["Cryo Rounds", "Stormbringer", "Serration", "Piercing Caliber", "Bane of Grineer"]
-    # while True:
-    #     modIn = input('Enter mod name (done to finish): ')
-    #     if modIn.lower() == 'done':
-    #         break
-    #     modlist.append(modIn)
-        
-    # nameEn = input("Enemy type Name: ")
-    nameEn = "Grineer"
-    # armourVal = float(input("Armour Value: "))
-    armourVal = 389
-    
-    enemyInfo = getEnemyInfo(enemies, nameEn)
-    modInfo = getModInfo(modlist, mods) 
-    armour = armourModifer(armourVal)
     if name in weapons:
+        # modlist = []
+        modlist = ["Cryo Rounds", "Stormbringer", "Serration", "Piercing Caliber", "Bane of Grineer"]
+        # while True:
+        #     modIn = input('Enter mod name (done to finish): ')
+        #     if modIn.lower() == 'done':
+        #         break
+        #     modlist.append(modIn)
+            
+        # nameEn = input("Enemy type Name: ")
+        factionName = "Grineer"
+        # armourVal = float(input("Armour Value: "))
+        enemyList = [57, 8, 500]
+        
+        factionInfo = getFactionInfo(faction, factionName)
+        modInfo = getModInfo(modlist, mods) 
+        armour = levelScaleArmour(enemyList[0], enemyList[1], enemyList[2])
+    
         weapon_data = weapons[name]
-        damageCalcGame, damageCalcHUD, damageCalcEnemy = weaponDamageQuantised(weapon_data, modInfo, enemyInfo, armour)
+        
+        damageCalcGame, damageCalcHUD, damageCalcEnemy = weaponDamageQuantised(weapon_data, modInfo, factionInfo, armour)
+        
         damageMods = damageModifiers(modInfo)
+        
         game, hud, enemy = dmgTotals(damageCalcGame, damageCalcHUD, damageCalcEnemy)
+        
         finalDMGGame = round(game+game*damageMods, 0)
         finalDMGHUD = round(hud+hud*damageMods,1)
         finalDMGEnemy = round(enemy+enemy*damageMods,0)
         bane1 = banes(modInfo,game,damageMods)
         bane2 = banes(modInfo,enemy,damageMods)
+        
         print("Final Game Damage is: ", finalDMGGame)
         print("Applied bane damage (true): ",bane1)
         print("------------------------------------------------")
