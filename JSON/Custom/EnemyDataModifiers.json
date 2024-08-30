@@ -1,0 +1,554 @@
+{
+    "ExportFactionModifiers": [
+        {
+            "name": "Grineer",
+            "damageModifiers": [
+                {
+                    "Impact": 1.5
+                },
+                {
+                    "Puncture": 1
+                },
+                {
+                    "Slash": 1
+                },
+                {
+                    "Heat": 1
+                },
+                {
+                    "Cold": 1
+                },
+                {
+                    "Electricity": 1
+                },
+                {
+                    "Toxin": 1
+                },
+                {
+                    "Blast": 1
+                },
+                {
+                    "Magnetic": 1
+                },
+                {
+                    "Viral": 1
+                },
+                {
+                    "Corrosive": 1.5
+                },
+                {
+                    "Void": 1
+                },
+                {
+                    "Radiation": 1
+                },
+                {
+                    "Gas": 1
+                },
+                {
+                    "True": 1
+                }
+            ]
+        },
+        {
+            "name": "Kuva",
+            "damageModifiers": [
+                {
+                    "Impact": 1.5
+                },
+                {
+                    "Puncture": 1
+                },
+                {
+                    "Slash": 1
+                },
+                {
+                    "Heat": 0.5
+                },
+                {
+                    "Cold": 1
+                },
+                {
+                    "Electricity": 1
+                },
+                {
+                    "Toxin": 1
+                },
+                {
+                    "Blast": 1
+                },
+                {
+                    "Magnetic": 1
+                },
+                {
+                    "Viral": 1
+                },
+                {
+                    "Corrosive": 1.5
+                },
+                {
+                    "Void": 1
+                },
+                {
+                    "Radiation": 1
+                },
+                {
+                    "Gas": 1
+                },
+                {
+                    "True": 1
+                }
+            ]
+        },
+        {
+            "name": "Corpus",
+            "damageModifiers": [
+                {
+                    "Impact": 1
+                },
+                {
+                    "Puncture": 1.5
+                },
+                {
+                    "Slash": 1
+                },
+                {
+                    "Heat": 1
+                },
+                {
+                    "Cold": 1
+                },
+                {
+                    "Electricity": 1
+                },
+                {
+                    "Toxin": 1
+                },
+                {
+                    "Blast": 1
+                },
+                {
+                    "Magnetic": 1
+                },
+                {
+                    "Viral": 1
+                },
+                {
+                    "Corrosive": 1.5
+                },
+                {
+                    "Void": 1
+                },
+                {
+                    "Radiation": 1
+                },
+                {
+                    "Gas": 1
+                },
+                {
+                    "True": 1
+                }
+            ]
+        },
+        {
+            "name": "Amalgam",
+            "damageModifiers": [
+                {
+                    "Impact": 1
+                },
+                {
+                    "Puncture": 1
+                },
+                {
+                    "Slash": 1
+                },
+                {
+                    "Heat": 1
+                },
+                {
+                    "Cold": 1
+                },
+                {
+                    "Electricity": 1.5
+                },
+                {
+                    "Toxin": 1
+                },
+                {
+                    "Blast": 0.5
+                },
+                {
+                    "Magnetic": 1
+                },
+                {
+                    "Viral": 1
+                },
+                {
+                    "Corrosive": 1
+                },
+                {
+                    "Void": 1.5
+                },
+                {
+                    "Radiation": 1
+                },
+                {
+                    "Gas": 1
+                },
+                {
+                    "True": 1
+                }
+            ]
+        },
+        {
+            "name": "Infested",
+            "damageModifiers": [
+                {
+                    "Impact": 1
+                },
+                {
+                    "Puncture": 1
+                },
+                {
+                    "Slash": 1.5
+                },
+                {
+                    "Heat": 1.5
+                },
+                {
+                    "Cold": 1
+                },
+                {
+                    "Electricity": 1
+                },
+                {
+                    "Toxin": 1
+                },
+                {
+                    "Blast": 1
+                },
+                {
+                    "Magnetic": 1
+                },
+                {
+                    "Viral": 1
+                },
+                {
+                    "Corrosive": 1
+                },
+                {
+                    "Void": 1
+                },
+                {
+                    "Radiation": 1
+                },
+                {
+                    "Gas": 1
+                },
+                {
+                    "True": 1
+                }
+            ]
+        },
+        {
+            "name": "Deimos",
+            "damageModifiers": [
+                {
+                    "Impact": 1
+                },
+                {
+                    "Puncture": 1
+                },
+                {
+                    "Slash": 1
+                },
+                {
+                    "Heat": 1
+                },
+                {
+                    "Cold": 1
+                },
+                {
+                    "Electricity": 1
+                },
+                {
+                    "Toxin": 1
+                },
+                {
+                    "Blast": 1.5
+                },
+                {
+                    "Magnetic": 1
+                },
+                {
+                    "Viral": 1
+                },
+                {
+                    "Corrosive": 1.5
+                },
+                {
+                    "Void": 1
+                },
+                {
+                    "Radiation": 0.5
+                },
+                {
+                    "Gas": 1
+                },
+                {
+                    "True": 1
+                }
+            ]
+        },
+        {
+            "name": "Orokin",
+            "damageModifiers": [
+                {
+                    "Impact": 1
+                },
+                {
+                    "Puncture": 1.5
+                },
+                {
+                    "Slash": 1
+                },
+                {
+                    "Heat": 1
+                },
+                {
+                    "Cold": 1
+                },
+                {
+                    "Electricity": 1
+                },
+                {
+                    "Toxin": 1
+                },
+                {
+                    "Blast": 1
+                },
+                {
+                    "Magnetic": 0.5
+                },
+                {
+                    "Viral": 1
+                },
+                {
+                    "Corrosive": 1
+                },
+                {
+                    "Void": 1.5
+                },
+                {
+                    "Radiation": 1
+                },
+                {
+                    "Gas": 1
+                },
+                {
+                    "True": 1
+                }
+            ]
+        },
+        {
+            "name": "Sentient",
+            "damageModifiers": [
+                {
+                    "Impact": 1
+                },
+                {
+                    "Puncture": 1
+                },
+                {
+                    "Slash": 1
+                },
+                {
+                    "Heat": 1
+                },
+                {
+                    "Cold": 1.5
+                },
+                {
+                    "Electricity": 1
+                },
+                {
+                    "Toxin": 1
+                },
+                {
+                    "Blast": 1
+                },
+                {
+                    "Magnetic": 1
+                },
+                {
+                    "Viral": 1.5
+                },
+                {
+                    "Corrosive": 1
+                },
+                {
+                    "Void": 1
+                },
+                {
+                    "Radiation": 1
+                },
+                {
+                    "Gas": 1
+                },
+                {
+                    "True": 1
+                }
+            ]
+        },
+        {
+            "name": "Narmer",
+            "damageModifiers": [
+                {
+                    "Impact": 1
+                },
+                {
+                    "Puncture": 1
+                },
+                {
+                    "Slash": 1.5
+                },
+                {
+                    "Heat": 1
+                },
+                {
+                    "Cold": 1
+                },
+                {
+                    "Electricity": 1
+                },
+                {
+                    "Toxin": 1.5
+                },
+                {
+                    "Blast": 1
+                },
+                {
+                    "Magnetic": 1
+                },
+                {
+                    "Viral": 1
+                },
+                {
+                    "Corrosive": 0.5
+                },
+                {
+                    "Void": 1
+                },
+                {
+                    "Radiation": 1
+                },
+                {
+                    "Gas": 1
+                },
+                {
+                    "True": 1
+                }
+            ]
+        },
+        {
+            "name": "Murmur",
+            "damageModifiers": [
+                {
+                    "Impact": 1
+                },
+                {
+                    "Puncture": 1
+                },
+                {
+                    "Slash": 1
+                },
+                {
+                    "Heat": 1
+                },
+                {
+                    "Cold": 1
+                },
+                {
+                    "Electricity": 1
+                },
+                {
+                    "Toxin": 1.5
+                },
+                {
+                    "Blast": 1
+                },
+                {
+                    "Magnetic": 1
+                },
+                {
+                    "Viral": 1.5
+                },
+                {
+                    "Corrosive": 1
+                },
+                {
+                    "Void": 1
+                },
+                {
+                    "Radiation": 0.5
+                },
+                {
+                    "Gas": 1
+                },
+                {
+                    "True": 1
+                }
+            ]
+        },
+        {
+            "name": "Zairman",
+            "damageModifiers": [
+                {
+                    "Impact": 1
+                },
+                {
+                    "Puncture": 1
+                },
+                {
+                    "Slash": 1
+                },
+                {
+                    "Heat": 1
+                },
+                {
+                    "Cold": 1
+                },
+                {
+                    "Electricity": 1
+                },
+                {
+                    "Toxin": 1
+                },
+                {
+                    "Blast": 1
+                },
+                {
+                    "Magnetic": 1
+                },
+                {
+                    "Viral": 1
+                },
+                {
+                    "Corrosive": 1
+                },
+                {
+                    "Void": 1
+                },
+                {
+                    "Radiation": 1
+                },
+                {
+                    "Gas": 1.5
+                },
+                {
+                    "True": 1
+                }
+            ]
+        }
+    ]
+}
