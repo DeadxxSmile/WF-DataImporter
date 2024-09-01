@@ -338,9 +338,9 @@ def valence(weapon_data, element_name, percentage):
     weapon_data["totalDamage"] = round(sum(weapon_data["damageIPS"].values()) + sum(weapon_data["damageED"].values()),1)
     
 def main():
-    weapons = loadWeps('../JSON/2024-08-25/ExportWeapons_en_Cleaned.json')
-    mods = loadMods('../JSON/2024-08-25/ExportUpgrades_en_Cleaned.json')
-    faction = loadFaction('../JSON/Custom/ExportEnemyValues.json')
+    weapons = loadWeps('../JSON/Public/ExportWeapons_en_Cleaned.json')
+    mods = loadMods('../JSON/Public/ExportUpgrades_en_Cleaned.json')
+    faction = loadFaction('../JSON/Custom/EnemyFactionModifiers.json')
     intrinsicElement= ["Electricity", 0.378]
     ###############
     #Set Hard Codes for testing
