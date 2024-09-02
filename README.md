@@ -28,6 +28,9 @@ Warframe's public export uses a file has at the end of the file names for the UR
 ### \JSON
 This is where the script exports the downloaded JSON files and inside you will see a 'Public' and 'Custom' folder. The 'Public' folder contains the export from DE's servers, and the 'Custom' folder are JSON files we have made using data scrapped from locations like the Warframe Wiki. You will notice a '_Cleaned' added to the end of the files. The JSON files come very broken from DE, including extra new lines where there shouldn't be, and a duplicate 'masteryReq' field in the Weapons file. The script cleans up these issues as well as removes those duplicate entries before exporting the JSON files to this folder. 
 
+### \WFDI-PowerShell
+This is the OG version of the script that runs via Powershell isntead of Python. If you don't want to install Python or deal with adding modules, then you can simply run this version to get the data.
+
 # License
 Distributed under the GNU GPL-3.0 license; please check the 'LICENSE' file in the GitHub repository for more information. 
 

@@ -13,9 +13,6 @@ $KeyURL = "https://origin.warframe.com/PublicExport/index_en.txt.lzma"
 $WFDataURL = "http://content.warframe.com/PublicExport/Manifest/"
 $KeyDownload = Join-Path -Path $TempFolder -ChildPath "index_en.txt.lzma"
 
-# Set Python Script Information
-$FixWeaponsScript = Join-Path -Path $PSScriptRoot -ChildPath "WF-FixWeapons.py"
-
 try {
     # Get The Current Key File And Save To Temp Folder
     Invoke-WebRequest $KeyURL -OutFile $KeyDownload
@@ -28,9 +25,6 @@ try {
 
     # Fix Issues With Warframe JSON Files And Export To JSON Folder
     Repair-JSON -JSONFolderPath $TempFolder -JSONCleanedFolder $WFDataDir
-
-    # Deal With Extra 'masteryReq' in Weapons File
-    & python $FixWeaponsScript
 }
 catch {
     # Output Error Message

@@ -4,22 +4,14 @@ import re
 import subprocess
 import json
 
-
-def remove_temp_files(remove_loc):
-    # Remove files from temporary folder
-    for filename in os.listdir(remove_loc):
-        file_path = os.path.join(remove_loc, filename)
-        if os.path.isfile(file_path):
-            os.remove(file_path)
-
-
+# Function to Get the Public Export Key File
 def get_wf_key(key_url, key_download):
     response = requests.get(key_url)
     response.raise_for_status()
     with open(key_download, "wb") as f:
         f.write(response.content)
 
-
+# Function to decompress the LZMA Archive
 def expand_lzma(input_path, output_path):
     # Check if the input file exists
     if not os.path.exists(input_path):
@@ -36,7 +28,7 @@ def expand_lzma(input_path, output_path):
     except Exception as e:
         print(f"An error occurred during decompression: {e}")
 
-
+# Function to Get the Warframe Data Files
 def get_wf_data(download_path, current_key, data_link):
     # Set key file information
     key_file = os.path.join(current_key, "index_en.txt")
@@ -56,7 +48,7 @@ def get_wf_data(download_path, current_key, data_link):
         except Exception as e:
             print(f"Failed to download {current_url}: {e}")
 
-
+# Function to Repair JSON Files
 def repair_json(json_folder_path, json_cleaned_folder):
     # Get all JSON files in the specified folder
     json_files = [f for f in os.listdir(json_folder_path) if f.endswith(".json")]
@@ -97,6 +89,14 @@ def repair_json(json_folder_path, json_cleaned_folder):
         # Export the fully cleaned JSON data
         with open(json_cleaned_path, "w", encoding="utf-8") as file:
             json.dump(json_data, file, indent=4)
+            
+# Function To Clear Temporary Files
+def remove_temp_files(remove_loc):
+    # Remove files from temporary folder
+    for filename in os.listdir(remove_loc):
+        file_path = os.path.join(remove_loc, filename)
+        if os.path.isfile(file_path):
+            os.remove(file_path)
 
 
 def main():
@@ -131,6 +131,6 @@ def main():
         remove_temp_files(temp_folder)
         print("Done")
 
-
+# Run the main function
 if __name__ == "__main__":
     main()
