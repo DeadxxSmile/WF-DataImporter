@@ -13,14 +13,14 @@
             "Missions": "Archon Hunt",
             "Name": "Archon Amar",
             "Planets": "Mars",
-            "--Scans": "?",
+            "Scans": "?",
             "Type": "Boss",
             "Weapons": "",
             "Health": "30000",
             "Armor": "25",
             "Affinity": "-1",
             "SpawnLevel": "150",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Archon Boreal",
@@ -35,14 +35,14 @@
             "Missions": "Archon Hunt",
             "Name": "Archon Boreal",
             "Planets": "Earth",
-            "--Scans": "?",
+            "Scans": "?",
             "Type": "Boss",
             "Weapons": "",
             "Health": "30000",
             "Armor": "25",
             "Affinity": "-1",
             "SpawnLevel": "150",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Archon Nira",
@@ -57,18 +57,18 @@
             "Missions": "Archon Hunt",
             "Name": "Archon Nira",
             "Planets": "Jupiter",
-            "--Scans": "?",
+            "Scans": "?",
             "Type": "Boss",
             "Weapons": "",
             "Health": "30000",
             "Armor": "25",
             "Affinity": "-1",
             "SpawnLevel": "150",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Narmer Buzzard Dropship",
-            "--Description": "?",
+            "Description": "?",
             "ExcludedFromSimulacrum": "true",
             "Faction": "Narmer",
             "Image": "?",
@@ -78,7 +78,7 @@
             "Missions": "Narmer Bounty",
             "Name": "Narmer Buzzard Dropship",
             "Planets": "Venus",
-            "--Scans": "?",
+            "Scans": "?",
             "TileSets": "Orb Vallis",
             "Type": "Dropship",
             "Weapons": "",
@@ -86,7 +86,7 @@
             "Armor": "-1",
             "Affinity": "-1",
             "BaseLevel": "1",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Narmer Ballista",
@@ -134,7 +134,7 @@
         },
         {
             "name": "Narmer Condor Dropship",
-            "--Description": "?",
+            "Description": "?",
             "ExcludedFromSimulacrum": "true",
             "Faction": "Narmer",
             "Image": "?",
@@ -144,7 +144,7 @@
             "Missions": "Narmer Bounty",
             "Name": "Narmer Condor Dropship",
             "Planets": "Venus",
-            "--Scans": "?",
+            "Scans": "?",
             "TileSets": "Orb Vallis",
             "Type": "Dropship",
             "Weapons": "",
@@ -152,7 +152,7 @@
             "Armor": "-1",
             "Affinity": "-1",
             "BaseLevel": "1",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Narmer Commander",
@@ -464,7 +464,7 @@
         },
         {
             "name": "Narmer M - Unknown (Unknown Entry)",
-            "--Description": "?",
+            "Description": "?",
             "ExcludedFromSimulacrum": "true",
             "Faction": "Narmer",
             "Image": "NarmerOstronMilitant.png",
@@ -474,14 +474,14 @@
             "Missions": "Narmer Bounty",
             "Name": "Narmer M - Unknown (Unknown Entry)",
             "Planets": "Earth",
-            "--Scans": "?",
+            "Scans": "?",
             "TileSets": "Plains of Eidolon",
             "Type": "?",
             "Weapons": "?",
-            "--Health": "-1",
+            "Health": "-1",
             "Affinity": "-1",
             "BaseLevel": "1",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Narmer Mine Osprey",
@@ -769,7 +769,7 @@
             "Affinity": "500",
             "BaseLevel": "1",
             "SpawnLevel": "50",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Narmer Trooper",

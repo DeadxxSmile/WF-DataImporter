@@ -107,7 +107,7 @@
             "Armor": "300",
             "Affinity": "1500",
             "BaseLevel": "1",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Shadow Stalker",
@@ -129,7 +129,7 @@
             "Armor": "300",
             "Affinity": "1500",
             "BaseLevel": "1",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Stalker",
@@ -150,7 +150,7 @@
             "Armor": "300",
             "Affinity": "1500",
             "BaseLevel": "1",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Torment",

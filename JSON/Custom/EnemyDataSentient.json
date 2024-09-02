@@ -27,7 +27,7 @@
             "Faction": "Sentient",
             "Image": "SentientTrooper.png",
             "InternalName": "",
-            "--Introduced": "?",
+            "Introduced": "?",
             "Link": "Battalyst",
             "Name": "Battalyst",
             "Scans": "5",
@@ -88,7 +88,7 @@
             "Faction": "Sentient",
             "Image": "SentientMeleeTrooper.png",
             "InternalName": "",
-            "--Introduced": "?",
+            "Introduced": "?",
             "Link": "Conculyst",
             "Name": "Conculyst",
             "Planets": "Baton Arms",
@@ -192,7 +192,7 @@
             "Affinity": "-1",
             "BaseLevel": "1",
             "SpawnLevel": "55",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Eidolon Hydrolyst",
@@ -216,7 +216,7 @@
             "Affinity": "-1",
             "BaseLevel": "1",
             "SpawnLevel": "60",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Eidolon Teralyst",
@@ -240,7 +240,7 @@
             "Affinity": "-1",
             "BaseLevel": "1",
             "SpawnLevel": "50",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Eidolon Vomvalyst",
@@ -282,7 +282,7 @@
             "Armor": "125",
             "Affinity": "-1",
             "BaseLevel": "1",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Ionyx",
@@ -304,7 +304,7 @@
             "Armor": "150",
             "Affinity": "-1",
             "BaseLevel": "1",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Mimic",
@@ -368,7 +368,7 @@
             "Affinity": "-1",
             "BaseLevel": "1",
             "SpawnLevel": "25",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Ortholyst",
@@ -411,7 +411,7 @@
             "Affinity": "-1",
             "BaseLevel": "17",
             "SpawnLevel": "40",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Summulyst",
