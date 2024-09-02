@@ -6,7 +6,7 @@
             "Faction": "Corpus",
             "Image": "002-ER.png",
             "InternalName": "",
-            "--Introduced": "?",
+            "Introduced": "?",
             "Link": "002-ER",
             "Missions": "The Index",
             "Name": "002-ER",
@@ -362,7 +362,7 @@
             "Faction": "Corpus",
             "Image": "ArmisUlta.png",
             "InternalName": "",
-            "--Introduced": "?",
+            "Introduced": "?",
             "Link": "Armis Ulta",
             "Missions": "The Index",
             "Name": "Armis Ulta",
@@ -385,7 +385,7 @@
             "FactionDamageOverride": "",
             "Image": "FusionDroneDE.png",
             "InternalName": "",
-            "--Introduced": "?",
+            "Introduced": "?",
             "Link": "Attack Drone (Archwing Enemy)",
             "Missions": "Archwing (Mission)",
             "Name": "Attack Drone (Archwing Enemy)",
@@ -398,7 +398,7 @@
             "Shield": "75",
             "Affinity": "-1",
             "BaseLevel": "1",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Auditor",
@@ -407,7 +407,7 @@
             "Faction": "Corpus",
             "Image": "CCTeamBRiotMoaAgent.png",
             "InternalName": "",
-            "--Introduced": "?",
+            "Introduced": "?",
             "Link": "Auditor",
             "Missions": "The Index",
             "Name": "Auditor",
@@ -572,7 +572,7 @@
             "Affinity": "400",
             "BaseLevel": "1",
             "SpawnLevel": "18",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Axio Crewman",
@@ -618,7 +618,7 @@
             "Affinity": "-1",
             "BaseLevel": "1",
             "SpawnLevel": "18",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Axio Detron Crewman",
@@ -727,7 +727,7 @@
             "Affinity": "500",
             "BaseLevel": "1",
             "SpawnLevel": "18",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Axio Harpi",
@@ -752,7 +752,7 @@
             "Affinity": "400",
             "BaseLevel": "1",
             "SpawnLevel": "18",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Axio MOA",
@@ -1008,7 +1008,7 @@
             "Affinity": "400",
             "BaseLevel": "1",
             "SpawnLevel": "18",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Axio Zerca",
@@ -1038,7 +1038,7 @@
             "Faction": "Corpus",
             "Image": "CCTeamBHyenaAgent.png",
             "InternalName": "",
-            "--Introduced": "?",
+            "Introduced": "?",
             "Link": "Azoth",
             "Missions": "The Index",
             "Name": "Azoth",
@@ -1051,7 +1051,7 @@
             "Armor": "50",
             "Affinity": "-1",
             "BaseLevel": "1",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Cannon Battery",
@@ -1075,7 +1075,7 @@
             "Affinity": "100",
             "BaseLevel": "1",
             "SpawnLevel": "4",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Carrier",
@@ -1085,7 +1085,7 @@
             "FactionDamageOverride": "",
             "Image": "CrpShipSwarm.png",
             "InternalName": "",
-            "--Introduced": "?",
+            "Introduced": "?",
             "Link": "Carrier",
             "Missions": "Archwing (Mission)",
             "Name": "Carrier",
@@ -1096,7 +1096,7 @@
             "Armor": "75",
             "Affinity": "300",
             "BaseLevel": "1",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Cinderthresh Hyena",
@@ -1119,7 +1119,7 @@
             "Armor": "50",
             "Affinity": "-1",
             "BaseLevel": "1",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Comet Shard",
@@ -1144,7 +1144,7 @@
             "Affinity": "400",
             "BaseLevel": "1",
             "SpawnLevel": "4",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Condor Dropship",
@@ -1164,7 +1164,7 @@
             "Armor": "100",
             "Affinity": "-1",
             "BaseLevel": "1",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Condor Storm Dropship",
@@ -1186,7 +1186,7 @@
             "Armor": "100",
             "Affinity": "-1",
             "BaseLevel": "1",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Coolant Raknoid",
@@ -1296,7 +1296,7 @@
             "Affinity": "400",
             "BaseLevel": "1",
             "SpawnLevel": "4",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Corpus Sniper Target",
@@ -1350,7 +1350,7 @@
             "Faction": "Corpus",
             "Image": "CorpusCaptureTarget.png",
             "InternalName": "",
-            "--Introduced": "?",
+            "Introduced": "?",
             "Link": "Corpus Target",
             "Missions": "Capture",
             "Name": "Corpus Target",
@@ -1371,7 +1371,7 @@
             "Faction": "Corpus",
             "Image": "CrewmanTech.png",
             "InternalName": "",
-            "--Introduced": "?",
+            "Introduced": "?",
             "Link": "Corpus Tech",
             "Name": "Corpus Tech",
             "Scans": "3",
@@ -1432,7 +1432,7 @@
             "FactionDamageOverride": "",
             "Image": "CrpShipFlak.png",
             "InternalName": "",
-            "--Introduced": "?",
+            "Introduced": "?",
             "Link": "Corvette",
             "Missions": "Archwing (Mission)",
             "Name": "Corvette",
@@ -1444,7 +1444,7 @@
             "Armor": "75",
             "Affinity": "100",
             "BaseLevel": "1",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Crewman",
@@ -1452,7 +1452,7 @@
             "Faction": "Corpus",
             "Image": "CrewmanNormal.png",
             "InternalName": "",
-            "--Introduced": "?",
+            "Introduced": "?",
             "Link": "Crewman",
             "Name": "Crewman",
             "Scans": "20",
@@ -1467,7 +1467,7 @@
         {
             "name": "Datalyst",
             "CodexSecret": "true",
-            "--Description": "?",
+            "Description": "?",
             "Faction": "Corpus",
             "Image": "CorpusArtificer.png",
             "InternalName": "",
@@ -1482,7 +1482,7 @@
             "Shield": "600",
             "Affinity": "-1",
             "BaseLevel": "1",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Demolisher Anti MOA",
@@ -1505,7 +1505,7 @@
             "Armor": "100",
             "Affinity": "-1",
             "BaseLevel": "1",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Demolisher Bursa",
@@ -1528,7 +1528,7 @@
             "Armor": "100",
             "Affinity": "-1",
             "BaseLevel": "1",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Demolisher Hyena",
@@ -1550,7 +1550,7 @@
             "Shield": "700",
             "Affinity": "-1",
             "BaseLevel": "1",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Demolisher Machinist",
@@ -1724,7 +1724,7 @@
             "Faction": "Corpus",
             "Image": "CCTeamCHackerAgent.png",
             "InternalName": "",
-            "--Introduced": "?",
+            "Introduced": "?",
             "Link": "Derim Zahn",
             "Missions": "The Index",
             "Name": "Derim Zahn",
@@ -1766,7 +1766,7 @@
             "Faction": "Corpus",
             "Image": "CrewmanShotgun.png",
             "InternalName": "",
-            "--Introduced": "?",
+            "Introduced": "?",
             "Link": "Detron Crewman",
             "Name": "Detron Crewman",
             "Scans": "20",
@@ -1803,7 +1803,7 @@
             "Faction": "Corpus",
             "Image": "DruPesfor.png",
             "InternalName": "",
-            "--Introduced": "?",
+            "Introduced": "?",
             "Link": "Dru Pesfor",
             "Missions": "The Index",
             "Name": "Dru Pesfor",
@@ -1841,7 +1841,7 @@
             "Affinity": "400",
             "BaseLevel": "1",
             "SpawnLevel": "18",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Elite Axio Harpi",
@@ -1866,7 +1866,7 @@
             "Affinity": "400",
             "BaseLevel": "1",
             "SpawnLevel": "18",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Elite Axio Weaver",
@@ -1891,7 +1891,7 @@
             "Affinity": "400",
             "BaseLevel": "1",
             "SpawnLevel": "18",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Elite Crewman",
@@ -1900,7 +1900,7 @@
             "Faction": "Corpus",
             "Image": "CrewmanElite.png",
             "InternalName": "",
-            "--Introduced": "?",
+            "Introduced": "?",
             "Link": "Elite Crewman",
             "Name": "Elite Crewman",
             "Scans": "5",
@@ -1935,7 +1935,7 @@
             "Affinity": "400",
             "BaseLevel": "1",
             "SpawnLevel": "45",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Elite Orm Harpi",
@@ -1960,7 +1960,7 @@
             "Affinity": "400",
             "BaseLevel": "1",
             "SpawnLevel": "45",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Elite Orm Weaver",
@@ -1985,7 +1985,7 @@
             "Affinity": "400",
             "BaseLevel": "1",
             "SpawnLevel": "45",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Elite Taro Basilisk",
@@ -2010,7 +2010,7 @@
             "Affinity": "400",
             "BaseLevel": "1",
             "SpawnLevel": "4",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Elite Taro Harpi",
@@ -2035,7 +2035,7 @@
             "Affinity": "400",
             "BaseLevel": "1",
             "SpawnLevel": "4",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Elite Taro Weaver",
@@ -2060,7 +2060,7 @@
             "Affinity": "400",
             "BaseLevel": "1",
             "SpawnLevel": "4",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Elite Vorac Basilisk",
@@ -2085,7 +2085,7 @@
             "Affinity": "400",
             "BaseLevel": "1",
             "SpawnLevel": "32",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Elite Vorac Harpi",
@@ -2110,7 +2110,7 @@
             "Affinity": "400",
             "BaseLevel": "1",
             "SpawnLevel": "32",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Elite Vorac Weaver",
@@ -2135,7 +2135,7 @@
             "Affinity": "400",
             "BaseLevel": "1",
             "SpawnLevel": "32",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Errant Specter",
@@ -2157,7 +2157,7 @@
             "Armor": "50",
             "Affinity": "-1",
             "BaseLevel": "1",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Exploiter Orb",
@@ -2181,7 +2181,7 @@
             "Affinity": "1500",
             "BaseLevel": "1",
             "SpawnLevel": "50",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Fog Comba",
@@ -2227,7 +2227,7 @@
             "FactionDamageOverride": "",
             "Image": "CrpShipLaser.png",
             "InternalName": "",
-            "--Introduced": "?",
+            "Introduced": "?",
             "Link": "Frigate",
             "Missions": "Archwing (Mission)",
             "Name": "Frigate",
@@ -2241,7 +2241,7 @@
             "Armor": "75",
             "Affinity": "200",
             "BaseLevel": "1",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Fusion MOA",
@@ -2269,7 +2269,7 @@
             "FactionDamageOverride": "",
             "Image": "CrpCombatPod.png",
             "InternalName": "",
-            "--Introduced": "?",
+            "Introduced": "?",
             "Link": "Gox",
             "Missions": "Archwing (Mission)",
             "Name": "Gox",
@@ -2282,7 +2282,7 @@
             "Armor": "500",
             "Affinity": "250",
             "BaseLevel": "1",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Gyre Hyena",
@@ -2314,7 +2314,7 @@
             "Faction": "Corpus",
             "Image": "DEHyenaLN2.png",
             "InternalName": "",
-            "--Introduced": "?",
+            "Introduced": "?",
             "Link": "Hyena Pack",
             "Missions": "Assassination\rPsamathe",
             "Name": "Hyena Ln2",
@@ -2329,7 +2329,7 @@
             "Affinity": "1000",
             "BaseLevel": "1",
             "SpawnLevel": "32",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Hyena Ng",
@@ -2339,7 +2339,7 @@
             "Faction": "Corpus",
             "Image": "DEHyenaNg.png",
             "InternalName": "",
-            "--Introduced": "?",
+            "Introduced": "?",
             "Link": "Hyena Pack",
             "Missions": "Assassination\rPsamathe",
             "Name": "Hyena Ng",
@@ -2354,7 +2354,7 @@
             "Affinity": "1000",
             "BaseLevel": "1",
             "SpawnLevel": "32",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Hyena Pb",
@@ -2364,7 +2364,7 @@
             "Faction": "Corpus",
             "Image": "DEHyenaPb.png",
             "InternalName": "",
-            "--Introduced": "?",
+            "Introduced": "?",
             "Link": "Hyena Pack",
             "Missions": "Assassination\rPsamathe",
             "Name": "Hyena Pb",
@@ -2379,7 +2379,7 @@
             "Affinity": "1000",
             "BaseLevel": "1",
             "SpawnLevel": "32",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Hyena Th",
@@ -2389,7 +2389,7 @@
             "Faction": "Corpus",
             "Image": "DEHyenaTh.png",
             "InternalName": "",
-            "--Introduced": "?",
+            "Introduced": "?",
             "Link": "Hyena Pack",
             "Missions": "Assassination\rPsamathe",
             "Name": "Hyena Th",
@@ -2404,7 +2404,7 @@
             "Affinity": "1000",
             "BaseLevel": "1",
             "SpawnLevel": "32",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Icemire Hyena",
@@ -2427,7 +2427,7 @@
             "Armor": "25",
             "Affinity": "-1",
             "BaseLevel": "1",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Isolator Bursa",
@@ -2471,7 +2471,7 @@
             "Affinity": "1500",
             "BaseLevel": "1",
             "SpawnLevel": "8",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Jad Teran",
@@ -2480,7 +2480,7 @@
             "Faction": "Corpus",
             "Image": "CCTeamBDisruptorAgent.png",
             "InternalName": "",
-            "--Introduced": "?",
+            "Introduced": "?",
             "Link": "Jad Teran",
             "Missions": "The Index",
             "Name": "Jad Teran",
@@ -2502,7 +2502,7 @@
             "Faction": "Corpus",
             "Image": "CCTeamCDeceptionAgent.png",
             "InternalName": "",
-            "--Introduced": "?",
+            "Introduced": "?",
             "Link": "Jen Dro",
             "Missions": "The Index",
             "Name": "Jen Dro",
@@ -2905,7 +2905,7 @@
             "Shield": "250",
             "Affinity": "-1",
             "BaseLevel": "1",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Leech Osprey",
@@ -2932,7 +2932,7 @@
             "Faction": "Corpus",
             "Image": "CCTeamAZanukaAgent.png",
             "InternalName": "",
-            "--Introduced": "?",
+            "Introduced": "?",
             "Link": "Lockjaw & Sol",
             "Missions": "The Index",
             "Name": "Lockjaw & Sol",
@@ -2945,7 +2945,7 @@
             "Armor": "50",
             "Affinity": "-1",
             "BaseLevel": "1",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Locust Drone",
@@ -2955,7 +2955,7 @@
             "FactionDamageOverride": "",
             "Image": "CrpSwarmDrone.png",
             "InternalName": "",
-            "--Introduced": "?",
+            "Introduced": "?",
             "Link": "Locust Drone",
             "Missions": "Archwing (Mission)",
             "Name": "Locust Drone",
@@ -2967,7 +2967,7 @@
             "Armor": "50",
             "Affinity": "-1",
             "BaseLevel": "1",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Lynx",
@@ -3015,7 +3015,7 @@
             "Faction": "Corpus",
             "Image": "CrpMiniJackalTurret.png",
             "InternalName": "/Lotus/Types/Enemies/Corpus/QuadRobot/MiniBoss/TurretQuadMiniBossAvatar",
-            "--Introduced": "?",
+            "Introduced": "?",
             "Link": "Lynx Turret",
             "Missions": "Orokin Sabotage\rHelp Clem\rGrineer Spy",
             "Name": "Lynx Turret",
@@ -3026,7 +3026,7 @@
             "Shield": "50",
             "Affinity": "-1",
             "BaseLevel": "1",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Machinist",
@@ -3056,7 +3056,7 @@
             "Faction": "Corpus",
             "Image": "MineOspreyDE.png",
             "InternalName": "",
-            "--Introduced": "?",
+            "Introduced": "?",
             "Link": "Mine Osprey",
             "Name": "Mine Osprey",
             "Scans": "10",
@@ -3093,7 +3093,7 @@
             "Faction": "Corpus",
             "Image": "MoaNormal.png",
             "InternalName": "",
-            "--Introduced": "?",
+            "Introduced": "?",
             "Link": "Moa",
             "Name": "MOA",
             "Scans": "20",
@@ -3112,7 +3112,7 @@
             "Faction": "Corpus",
             "Image": "CCTeamCMoaAgent.png",
             "InternalName": "",
-            "--Introduced": "?",
+            "Introduced": "?",
             "Link": "M-W.A.M.",
             "Missions": "The Index",
             "Name": "M-W.A.M.",
@@ -3134,7 +3134,7 @@
             "Faction": "Corpus",
             "Image": "CCTeamARifleAgent.png",
             "InternalName": "",
-            "--Introduced": "?",
+            "Introduced": "?",
             "Link": "Nako Xol",
             "Missions": "The Index",
             "Name": "Nako Xol",
@@ -3168,7 +3168,7 @@
             "Affinity": "-1",
             "BaseLevel": "1",
             "SpawnLevel": "5",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Nemes Ranger",
@@ -3177,7 +3177,7 @@
             "FactionDamageOverride": "",
             "Image": "Nemes.png",
             "InternalName": "",
-            "--Introduced": "?",
+            "Introduced": "?",
             "Link": "Nemes Ranger",
             "Missions": "Archwing (Mission)",
             "Name": "Nemes Ranger",
@@ -3211,7 +3211,7 @@
             "Affinity": "100",
             "BaseLevel": "1",
             "SpawnLevel": "14",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Nemes Scout",
@@ -3220,7 +3220,7 @@
             "FactionDamageOverride": "",
             "Image": "Nemes.png",
             "InternalName": "",
-            "--Introduced": "?",
+            "Introduced": "?",
             "Link": "Nemes Scout",
             "Missions": "Archwing (Mission)",
             "Name": "Nemes Scout",
@@ -3275,7 +3275,7 @@
             "Faction": "Corpus",
             "Image": "CrpNullRanger.png",
             "InternalName": "",
-            "--Introduced": "?",
+            "Introduced": "?",
             "Link": "Nullifier Crewman",
             "Name": "Nullifier Crewman",
             "Scans": "5",
@@ -3294,7 +3294,7 @@
             "Faction": "Corpus",
             "Image": "CorpusCaptureTarget.png",
             "InternalName": "",
-            "--Introduced": "?",
+            "Introduced": "?",
             "Link": "Nullifier Target",
             "Missions": "Capture",
             "Name": "Nullifier Target",
@@ -3305,7 +3305,7 @@
             "Shield": "250",
             "Affinity": "-1",
             "BaseLevel": "1",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Optio",
@@ -3352,7 +3352,7 @@
             "Affinity": "400",
             "BaseLevel": "1",
             "SpawnLevel": "45",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Orm Crewman",
@@ -3398,7 +3398,7 @@
             "Affinity": "-1",
             "BaseLevel": "1",
             "SpawnLevel": "45",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Orm Detron Crewman",
@@ -3507,7 +3507,7 @@
             "Affinity": "500",
             "BaseLevel": "1",
             "SpawnLevel": "45",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Orm Harpi",
@@ -3532,7 +3532,7 @@
             "Affinity": "400",
             "BaseLevel": "1",
             "SpawnLevel": "45",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Orm MOA",
@@ -3788,7 +3788,7 @@
             "Affinity": "400",
             "BaseLevel": "1",
             "SpawnLevel": "45",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Orm Zerca",
@@ -3818,7 +3818,7 @@
             "Faction": "Corpus",
             "Image": "OspreySuicide.png",
             "InternalName": "",
-            "--Introduced": "?",
+            "Introduced": "?",
             "Link": "Oxium Osprey",
             "Name": "Oxium Osprey",
             "Scans": "5",
@@ -3838,7 +3838,7 @@
             "Faction": "Corpus",
             "Image": "CCTeamASkateAgent.png",
             "InternalName": "",
-            "--Introduced": "?",
+            "Introduced": "?",
             "Link": "Pelna Cade",
             "Missions": "The Index",
             "Name": "Pelna Cade",
@@ -3861,7 +3861,7 @@
             "FactionDamageOverride": "Grineer",
             "Image": "JetpackCrewmanPenta.png",
             "InternalName": "",
-            "--Introduced": "?",
+            "Introduced": "?",
             "Link": "Penta Ranger",
             "Missions": "Archwing (Mission)",
             "Name": "Penta Ranger",
@@ -3873,7 +3873,7 @@
             "Shield": "100",
             "Affinity": "300",
             "BaseLevel": "1",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Prod Crewman",
@@ -3881,7 +3881,7 @@
             "Faction": "Corpus",
             "Image": "CrewmanProd.png",
             "InternalName": "",
-            "--Introduced": "?",
+            "Introduced": "?",
             "Link": "Prod Crewman",
             "Name": "Prod Crewman",
             "Scans": "20",
@@ -3916,7 +3916,7 @@
             "Affinity": "-1",
             "BaseLevel": "1",
             "SpawnLevel": "60",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Protea Specter",
@@ -3939,7 +3939,7 @@
             "Armor": "200",
             "Affinity": "-1",
             "BaseLevel": "21",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Quanta Ranger",
@@ -3949,7 +3949,7 @@
             "FactionDamageOverride": "Grineer",
             "Image": "JetpackCrewmamQuanta.png",
             "InternalName": "",
-            "--Introduced": "?",
+            "Introduced": "?",
             "Link": "Quanta Ranger",
             "Missions": "Archwing (Mission)",
             "Name": "Quanta Ranger",
@@ -3961,7 +3961,7 @@
             "Shield": "100",
             "Affinity": "150",
             "BaseLevel": "1",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Rabbleback Hyena",
@@ -3992,7 +3992,7 @@
             "Faction": "Corpus",
             "Image": "MoaRailgun.png",
             "InternalName": "",
-            "--Introduced": "?",
+            "Introduced": "?",
             "Link": "Railgun Moa",
             "Name": "Railgun MOA",
             "Scans": "10",
@@ -4010,7 +4010,7 @@
             "Faction": "Corpus",
             "Image": "RanaDel.png",
             "InternalName": "",
-            "--Introduced": "?",
+            "Introduced": "?",
             "Link": "Rana Del",
             "Missions": "The Index",
             "Name": "Rana Del",
@@ -4033,7 +4033,7 @@
             "FactionDamageOverride": "Grineer",
             "Image": "JetpackCrewmanDera.png",
             "InternalName": "",
-            "--Introduced": "?",
+            "Introduced": "?",
             "Link": "Ranger",
             "Missions": "Archwing (Mission)",
             "Name": "Ranger",
@@ -4045,7 +4045,7 @@
             "Shield": "100",
             "Affinity": "200",
             "BaseLevel": "1",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Raptor Mt",
@@ -4070,7 +4070,7 @@
             "Affinity": "1500",
             "BaseLevel": "1",
             "SpawnLevel": "23",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Raptor Ns",
@@ -4095,7 +4095,7 @@
             "Affinity": "1500",
             "BaseLevel": "1",
             "SpawnLevel": "23",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Raptor Rv",
@@ -4120,7 +4120,7 @@
             "Affinity": "1500",
             "BaseLevel": "1",
             "SpawnLevel": "23",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Raptor Rx",
@@ -4128,7 +4128,7 @@
             "Faction": "Corpus",
             "Image": "CCTeamBRaptorAgent.png",
             "InternalName": "",
-            "--Introduced": "?",
+            "Introduced": "?",
             "Link": "Raptor Rx",
             "Missions": "The Index",
             "Name": "Raptor Rx",
@@ -4149,7 +4149,7 @@
             "Faction": "Corpus",
             "Image": "Ratel.png",
             "InternalName": "",
-            "--Introduced": "?",
+            "Introduced": "?",
             "Link": "Ratel",
             "Name": "Ratel",
             "Scans": "20",
@@ -4183,7 +4183,7 @@
             "Affinity": "-1",
             "BaseLevel": "1",
             "SpawnLevel": "43",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Remech Osprey",
@@ -4250,7 +4250,7 @@
             "Faction": "Corpus",
             "Image": "DiscOsprey.png",
             "InternalName": "",
-            "--Introduced": "?",
+            "Introduced": "?",
             "Link": "Sapping Osprey",
             "Name": "Sapping Osprey",
             "Scans": "5",
@@ -4269,7 +4269,7 @@
             "Faction": "Corpus",
             "Image": "ScavangerOspreyDE.png",
             "InternalName": "",
-            "--Introduced": "?",
+            "Introduced": "?",
             "Link": "Scavenger Drone",
             "Name": "Scavenger Drone",
             "Scans": "10",
@@ -4318,7 +4318,7 @@
             "Shield": "10",
             "Affinity": "50",
             "BaseLevel": "1",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Senta Turret (Corpus)",
@@ -4327,7 +4327,7 @@
             "Faction": "Corpus",
             "Image": "CorpusTurret.png",
             "InternalName": "/Lotus/Types/Enemies/Corpus/Turrets/TurretAvatars/AutoTurretHeavyAvatar",
-            "--Introduced": "?",
+            "Introduced": "?",
             "Link": "Senta Turret (Corpus)",
             "Name": "Senta Turret (Corpus)",
             "Scans": "20",
@@ -4337,7 +4337,7 @@
             "Armor": "100",
             "Affinity": "-1",
             "BaseLevel": "1",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Senta Turret (Orb Vallis)",
@@ -4358,7 +4358,7 @@
             "Shield": "100",
             "Affinity": "-1",
             "BaseLevel": "1",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Sentient Research Director",
@@ -4388,7 +4388,7 @@
             "Faction": "Corpus",
             "Image": "ShieldOspreyDE.png",
             "InternalName": "",
-            "--Introduced": "?",
+            "Introduced": "?",
             "Link": "Shield Osprey",
             "Name": "Shield Osprey",
             "Scans": "20",
@@ -4406,7 +4406,7 @@
             "Faction": "Corpus",
             "Image": "MoaShockwave.png",
             "InternalName": "",
-            "--Introduced": "?",
+            "Introduced": "?",
             "Link": "Shockwave Moa",
             "Name": "Shockwave MOA",
             "Scans": "5",
@@ -4538,7 +4538,7 @@
             "Affinity": "400",
             "BaseLevel": "1",
             "SpawnLevel": "4",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Taro Crewman",
@@ -4584,7 +4584,7 @@
             "Affinity": "-1",
             "BaseLevel": "1",
             "SpawnLevel": "4",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Taro Detron Crewman",
@@ -4693,7 +4693,7 @@
             "Affinity": "500",
             "BaseLevel": "1",
             "SpawnLevel": "4",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Taro Harpi",
@@ -4718,7 +4718,7 @@
             "Affinity": "400",
             "BaseLevel": "1",
             "SpawnLevel": "4",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Taro MOA",
@@ -4992,7 +4992,7 @@
             "Affinity": "400",
             "BaseLevel": "1",
             "SpawnLevel": "4",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Taro Zerca",
@@ -5481,7 +5481,7 @@
             "Faction": "Corpus",
             "Image": "RaptorTwoLaser.png",
             "InternalName": "",
-            "--Introduced": "?",
+            "Introduced": "?",
             "Link": "The Raptor",
             "Missions": "Assassination\rNaamah",
             "Name": "The Raptor",
@@ -5494,7 +5494,7 @@
             "Armor": "200",
             "Affinity": "-1",
             "BaseLevel": "1",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "The Sergeant",
@@ -5519,7 +5519,7 @@
             "Affinity": "1500",
             "BaseLevel": "1",
             "SpawnLevel": "15",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Tia Mayn",
@@ -5527,7 +5527,7 @@
             "Faction": "Corpus",
             "Image": "CCTeamCStealthAgent.png",
             "InternalName": "",
-            "--Introduced": "?",
+            "Introduced": "?",
             "Link": "Tia Mayn",
             "Missions": "The Index",
             "Name": "Tia Mayn",
@@ -5582,7 +5582,7 @@
             "Shield": "750",
             "Affinity": "-1",
             "BaseLevel": "1",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Vapos Anti MOA",
@@ -5625,7 +5625,7 @@
             "Armor": "50",
             "Affinity": "-1",
             "BaseLevel": "1",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Vapos Condor Dropship",
@@ -5648,7 +5648,7 @@
             "Armor": "100",
             "Affinity": "-1",
             "BaseLevel": "1",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Vapos Condor Elite Dropship",
@@ -5671,7 +5671,7 @@
             "Armor": "100",
             "Affinity": "-1",
             "BaseLevel": "1",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Vapos Crewman",
@@ -6062,7 +6062,7 @@
             "Faction": "Corpus",
             "Image": "CCTeamAHeavyAgent.png",
             "InternalName": "",
-            "--Introduced": "?",
+            "Introduced": "?",
             "Link": "Ved Xol",
             "Missions": "The Index",
             "Name": "Ved Xol",
@@ -6122,7 +6122,7 @@
             "Affinity": "400",
             "BaseLevel": "1",
             "SpawnLevel": "32",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Vorac Crewman",
@@ -6168,7 +6168,7 @@
             "Affinity": "-1",
             "BaseLevel": "1",
             "SpawnLevel": "32",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Vorac Detron Crewman",
@@ -6277,7 +6277,7 @@
             "Affinity": "500",
             "BaseLevel": "1",
             "SpawnLevel": "32",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Vorac Harpi",
@@ -6302,7 +6302,7 @@
             "Affinity": "400",
             "BaseLevel": "1",
             "SpawnLevel": "32",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Vorac MOA",
@@ -6558,7 +6558,7 @@
             "Affinity": "400",
             "BaseLevel": "1",
             "SpawnLevel": "32",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Vorac Zerca",
@@ -6604,7 +6604,7 @@
             "Affinity": "1000",
             "BaseLevel": "1",
             "SpawnLevel": "20",
-            "--Multis": "?"
+            "Multis": "?"
         },
         {
             "name": "Zanuka Hunter",
@@ -6613,7 +6613,7 @@
             "Faction": "Corpus Amalgam",
             "Image": "DEHarvester.png",
             "InternalName": "",
-            "--Introduced": "?",
+            "Introduced": "?",
             "Link": "Zanuka Hunter",
             "Missions": "Assassination\rThemisto",
             "Name": "Zanuka Hunter",
@@ -6625,7 +6625,7 @@
             "Armor": "25",
             "Affinity": "1500",
             "BaseLevel": "1",
-            "--Multis": "?"
+            "Multis": "?"
         }
     ]
 }
