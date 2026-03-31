@@ -153,7 +153,7 @@
             "masteryReq": 0,
             "missionIndex": 2,
             "factionIndex": 1,
-            "minEnemyLevel": 3,
+            "minEnemyLevel": 6,
             "maxEnemyLevel": 8
         },
         {
@@ -177,7 +177,7 @@
             "masteryReq": 0,
             "missionIndex": 9,
             "factionIndex": 1,
-            "minEnemyLevel": 6,
+            "minEnemyLevel": 5,
             "maxEnemyLevel": 8
         },
         {
@@ -189,7 +189,7 @@
             "masteryReq": 0,
             "missionIndex": 13,
             "factionIndex": 1,
-            "minEnemyLevel": 3,
+            "minEnemyLevel": 6,
             "maxEnemyLevel": 8
         },
         {
@@ -274,7 +274,7 @@
             "missionIndex": 8,
             "factionIndex": 1,
             "minEnemyLevel": 3,
-            "maxEnemyLevel": 8
+            "maxEnemyLevel": 7
         },
         {
             "uniqueName": "SolNode101",
@@ -286,7 +286,7 @@
             "missionIndex": 17,
             "factionIndex": 1,
             "minEnemyLevel": 3,
-            "maxEnemyLevel": 8
+            "maxEnemyLevel": 7
         },
         {
             "uniqueName": "ClanNode0",
@@ -299,6 +299,18 @@
             "factionIndex": 2,
             "minEnemyLevel": 8,
             "maxEnemyLevel": 18
+        },
+        {
+            "uniqueName": "SolNode239",
+            "name": "Vesper Relay",
+            "systemIndex": 1,
+            "systemName": "Venus",
+            "nodeType": 0,
+            "masteryReq": 0,
+            "missionIndex": 45,
+            "factionIndex": 11,
+            "minEnemyLevel": 35,
+            "maxEnemyLevel": 45
         },
         {
             "uniqueName": "SolNode902",
@@ -345,8 +357,8 @@
             "masteryReq": 0,
             "missionIndex": 7,
             "factionIndex": 0,
-            "minEnemyLevel": 2,
-            "maxEnemyLevel": 4
+            "minEnemyLevel": 3,
+            "maxEnemyLevel": 6
         },
         {
             "uniqueName": "SolNode39",
@@ -381,8 +393,8 @@
             "masteryReq": 0,
             "missionIndex": 8,
             "factionIndex": 0,
-            "minEnemyLevel": 1,
-            "maxEnemyLevel": 6
+            "minEnemyLevel": 2,
+            "maxEnemyLevel": 5
         },
         {
             "uniqueName": "SolNode89",
@@ -418,7 +430,7 @@
             "missionIndex": 9,
             "factionIndex": 0,
             "minEnemyLevel": 3,
-            "maxEnemyLevel": 5
+            "maxEnemyLevel": 6
         },
         {
             "uniqueName": "SolNode75",
@@ -493,6 +505,18 @@
             "maxEnemyLevel": 30
         },
         {
+            "uniqueName": "SolNode451",
+            "name": "Saya's Visions",
+            "systemIndex": 2,
+            "systemName": "Earth",
+            "nodeType": 0,
+            "masteryReq": 0,
+            "missionIndex": 41,
+            "factionIndex": 2,
+            "minEnemyLevel": 5,
+            "maxEnemyLevel": 15
+        },
+        {
             "uniqueName": "SolNode30",
             "name": "Olympus",
             "systemIndex": 3,
@@ -513,8 +537,8 @@
             "masteryReq": 0,
             "missionIndex": 4,
             "factionIndex": 0,
-            "minEnemyLevel": 9,
-            "maxEnemyLevel": 11
+            "minEnemyLevel": 8,
+            "maxEnemyLevel": 10
         },
         {
             "uniqueName": "SolNode46",
@@ -526,7 +550,7 @@
             "missionIndex": 8,
             "factionIndex": 0,
             "minEnemyLevel": 8,
-            "maxEnemyLevel": 13
+            "maxEnemyLevel": 12
         },
         {
             "uniqueName": "SolNode68",
@@ -550,7 +574,7 @@
             "missionIndex": 1,
             "factionIndex": 0,
             "minEnemyLevel": 8,
-            "maxEnemyLevel": 10
+            "maxEnemyLevel": 12
         },
         {
             "uniqueName": "SolNode106",
@@ -598,7 +622,7 @@
             "missionIndex": 17,
             "factionIndex": 0,
             "minEnemyLevel": 9,
-            "maxEnemyLevel": 14
+            "maxEnemyLevel": 11
         },
         {
             "uniqueName": "SolNode45",
@@ -658,7 +682,7 @@
             "missionIndex": 4,
             "factionIndex": 1,
             "minEnemyLevel": 9,
-            "maxEnemyLevel": 11
+            "maxEnemyLevel": 12
         },
         {
             "uniqueName": "ClanNode9",
@@ -681,8 +705,8 @@
             "masteryReq": 0,
             "missionIndex": 9,
             "factionIndex": 0,
-            "minEnemyLevel": 8,
-            "maxEnemyLevel": 10
+            "minEnemyLevel": 9,
+            "maxEnemyLevel": 11
         },
         {
             "uniqueName": "SolNode904",
@@ -1317,8 +1341,8 @@
             "masteryReq": 0,
             "missionIndex": 4,
             "factionIndex": 1,
-            "minEnemyLevel": 29,
-            "maxEnemyLevel": 31
+            "minEnemyLevel": 30,
+            "maxEnemyLevel": 32
         },
         {
             "uniqueName": "SolNode62",
@@ -2972,7 +2996,7 @@
             "nodeType": 0,
             "masteryReq": 0,
             "missionIndex": 28,
-            "factionIndex": 5,
+            "factionIndex": 10,
             "minEnemyLevel": 20,
             "maxEnemyLevel": 20
         },
@@ -2984,7 +3008,7 @@
             "nodeType": 0,
             "masteryReq": 0,
             "missionIndex": 28,
-            "factionIndex": 5,
+            "factionIndex": 10,
             "minEnemyLevel": 20,
             "maxEnemyLevel": 20
         },
@@ -2999,6 +3023,210 @@
             "factionIndex": 3,
             "minEnemyLevel": 35,
             "maxEnemyLevel": 55
+        },
+        {
+            "uniqueName": "SolNode850",
+            "name": "Legacyte Harvest",
+            "systemIndex": 23,
+            "systemName": "H\u00f6llvania",
+            "nodeType": 0,
+            "masteryReq": 0,
+            "missionIndex": 40,
+            "factionIndex": 9,
+            "minEnemyLevel": 65,
+            "maxEnemyLevel": 70
+        },
+        {
+            "uniqueName": "SolNode851",
+            "name": "Hell-Scrub: Scaldra",
+            "systemIndex": 23,
+            "systemName": "H\u00f6llvania",
+            "nodeType": 0,
+            "masteryReq": 0,
+            "missionIndex": 2,
+            "factionIndex": 8,
+            "minEnemyLevel": 65,
+            "maxEnemyLevel": 70
+        },
+        {
+            "uniqueName": "SolNode852",
+            "name": "Hell-Scrub: Techrot",
+            "systemIndex": 23,
+            "systemName": "H\u00f6llvania",
+            "nodeType": 0,
+            "masteryReq": 0,
+            "missionIndex": 2,
+            "factionIndex": 9,
+            "minEnemyLevel": 65,
+            "maxEnemyLevel": 70
+        },
+        {
+            "uniqueName": "SolNode853",
+            "name": "Exterminate: Scaldra",
+            "systemIndex": 23,
+            "systemName": "H\u00f6llvania",
+            "nodeType": 0,
+            "masteryReq": 0,
+            "missionIndex": 1,
+            "factionIndex": 8,
+            "minEnemyLevel": 65,
+            "maxEnemyLevel": 70
+        },
+        {
+            "uniqueName": "SolNode854",
+            "name": "Exterminate: Techrot",
+            "systemIndex": 23,
+            "systemName": "H\u00f6llvania",
+            "nodeType": 0,
+            "masteryReq": 0,
+            "missionIndex": 1,
+            "factionIndex": 9,
+            "minEnemyLevel": 65,
+            "maxEnemyLevel": 70
+        },
+        {
+            "uniqueName": "SolNode855",
+            "name": "Faceoff: Squad VS Squad",
+            "systemIndex": 23,
+            "systemName": "H\u00f6llvania",
+            "nodeType": 0,
+            "masteryReq": 0,
+            "missionIndex": 42,
+            "factionIndex": 8,
+            "minEnemyLevel": 65,
+            "maxEnemyLevel": 70
+        },
+        {
+            "uniqueName": "SolNode856",
+            "name": "Assassinate: H-09 Tank",
+            "systemIndex": 23,
+            "systemName": "H\u00f6llvania",
+            "nodeType": 0,
+            "masteryReq": 0,
+            "missionIndex": 0,
+            "factionIndex": 8,
+            "minEnemyLevel": 65,
+            "maxEnemyLevel": 70
+        },
+        {
+            "uniqueName": "SolNode857",
+            "name": "Faceoff: Single Squad",
+            "systemIndex": 23,
+            "systemName": "H\u00f6llvania",
+            "nodeType": 0,
+            "masteryReq": 0,
+            "missionIndex": 42,
+            "factionIndex": 8,
+            "minEnemyLevel": 65,
+            "maxEnemyLevel": 70
+        },
+        {
+            "uniqueName": "SolNode858",
+            "name": "Solstice Square",
+            "systemIndex": 23,
+            "systemName": "H\u00f6llvania",
+            "nodeType": 0,
+            "masteryReq": 0,
+            "missionIndex": 8,
+            "factionIndex": 8,
+            "minEnemyLevel": 65,
+            "maxEnemyLevel": 70
+        },
+        {
+            "uniqueName": "SolNode250",
+            "name": "Recall: Hunhullus",
+            "systemIndex": 24,
+            "systemName": "Dark Refractory, Deimos",
+            "nodeType": 0,
+            "masteryReq": 0,
+            "missionIndex": 44,
+            "factionIndex": 3,
+            "minEnemyLevel": 65,
+            "maxEnemyLevel": 70
+        },
+        {
+            "uniqueName": "SolNode251",
+            "name": "Recall: Dactolyst",
+            "systemIndex": 24,
+            "systemName": "Dark Refractory, Deimos",
+            "nodeType": 0,
+            "masteryReq": 0,
+            "missionIndex": 44,
+            "factionIndex": 3,
+            "minEnemyLevel": 65,
+            "maxEnemyLevel": 70
+        },
+        {
+            "uniqueName": "SolNode252",
+            "name": "Recall: Vanguard",
+            "systemIndex": 24,
+            "systemName": "Dark Refractory, Deimos",
+            "nodeType": 0,
+            "masteryReq": 0,
+            "missionIndex": 44,
+            "factionIndex": 3,
+            "minEnemyLevel": 65,
+            "maxEnemyLevel": 70
+        },
+        {
+            "uniqueName": "SolNode253",
+            "name": "Descend",
+            "systemIndex": 24,
+            "systemName": "Dark Refractory, Deimos",
+            "nodeType": 0,
+            "masteryReq": 0,
+            "missionIndex": 43,
+            "factionIndex": 3,
+            "minEnemyLevel": 65,
+            "maxEnemyLevel": 65
+        },
+        {
+            "uniqueName": "SolNode254",
+            "name": "Descend from Marie's Sanctuary",
+            "systemIndex": 24,
+            "systemName": "Dark Refractory, Deimos",
+            "nodeType": 0,
+            "masteryReq": 0,
+            "missionIndex": 43,
+            "factionIndex": 3,
+            "minEnemyLevel": 72,
+            "maxEnemyLevel": 72
+        },
+        {
+            "uniqueName": "SolNode255",
+            "name": "Descend from Lyon's Sanctuary",
+            "systemIndex": 24,
+            "systemName": "Dark Refractory, Deimos",
+            "nodeType": 0,
+            "masteryReq": 0,
+            "missionIndex": 43,
+            "factionIndex": 3,
+            "minEnemyLevel": 79,
+            "maxEnemyLevel": 79
+        },
+        {
+            "uniqueName": "SolNode256",
+            "name": "Roathe's Oblivion",
+            "systemIndex": 24,
+            "systemName": "Dark Refractory, Deimos",
+            "nodeType": 0,
+            "masteryReq": 0,
+            "missionIndex": 43,
+            "factionIndex": 3,
+            "minEnemyLevel": 86,
+            "maxEnemyLevel": 86
+        },
+        {
+            "uniqueName": "SolNode257",
+            "name": "The Guilty",
+            "systemIndex": 24,
+            "systemName": "Dark Refractory, Deimos",
+            "nodeType": 0,
+            "masteryReq": 0,
+            "missionIndex": 44,
+            "factionIndex": 3,
+            "minEnemyLevel": 165,
+            "maxEnemyLevel": 170
         }
     ]
 }

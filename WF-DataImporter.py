@@ -128,7 +128,7 @@ def main():
         print(f"Main Code Try/Catch Block - An error occurred: {e}")
     finally:
         # Clean temporary files out of temp folder
-        remove_temp_files(temp_folder)
+        #remove_temp_files(temp_folder)
         print("Done")
 
 # Run the main function

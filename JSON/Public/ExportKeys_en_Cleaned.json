@@ -8,6 +8,21 @@
             "codexSecret": false
         },
         {
+            "uniqueName": "/Lotus/Types/Keys/1999Quest/1999QuestGoodEndKeyChain",
+            "name": "The Hex Finale",
+            "description": "A chance to rewrite history and avert disaster.",
+            "parentName": "",
+            "codexSecret": false,
+            "excludeFromCodex": true
+        },
+        {
+            "uniqueName": "/Lotus/Types/Keys/1999Quest/1999QuestKeyChain",
+            "name": "The Hex",
+            "description": "The desperate hunt for Albrecht Entrati has led the Drifter to the city of H\u00f6llvania on December 31st, 1999. Despite the Scaldra lockdown in the face of the Techrot menace, the citizens do their best to celebrate. But this has all happened before... and ended in disaster.",
+            "parentName": "",
+            "codexSecret": false
+        },
+        {
             "uniqueName": "/Lotus/Types/Keys/ApostasyQuest/ApostasyKeyChain",
             "name": "Apostasy Prologue",
             "description": "Inspect your personal quarters upon finishing the Chains of Harrow quest.",
@@ -95,7 +110,7 @@
             "uniqueName": "/Lotus/Types/Keys/InfestedAladVQuest/AssassinateInfestedAladVKey",
             "name": "Mutalist Alad V Assassinate",
             "description": "Put an end to Alad V and his Mutalist experiments",
-            "parentName": "/Lotus/Types/Keys/TestKeyA",
+            "parentName": "/Lotus/Types/Keys/TestKey",
             "codexSecret": true
         },
         {
@@ -143,7 +158,7 @@
         {
             "uniqueName": "/Lotus/Types/Keys/LimboQuest/LimboQuestKeyChain",
             "name": "The Limbo Theorem",
-            "description": "The Limbo Theorem quest cannot be completed without an Archwing\r\rPiece together the Limbo Theorem to uncover its source",
+            "description": "The Limbo Theorem quest cannot be completed without an Archwing\r\n\r\nPiece together the Limbo Theorem to uncover its source",
             "parentName": "",
             "codexSecret": false
         },
@@ -151,6 +166,13 @@
             "uniqueName": "/Lotus/Types/Keys/MirageQuest/MirageQuestKeyChain",
             "name": "Hidden Messages",
             "description": "Seek out the Warframe Mirage.",
+            "parentName": "",
+            "codexSecret": false
+        },
+        {
+            "uniqueName": "/Lotus/Types/Keys/ModQuest/ModQuestKeyChain",
+            "name": "The Teacher",
+            "description": "Corpus incursions into Grineer territory lead to showdown with a forgotten rival.",
             "parentName": "",
             "codexSecret": false
         },
@@ -164,7 +186,7 @@
         {
             "uniqueName": "/Lotus/Types/Keys/NewPlayerQuest/NewPlayerQuestKeyChain",
             "name": "AWAKENING",
-            "description": "The Tenno: monuments of an ancient warrior caste.\r\rFor generations you've slept, with no call to wake you.\r\rUntil now.",
+            "description": "The Tenno: monuments of an ancient warrior caste.\r\n\r\nFor generations you've slept, with no call to wake you.\r\n\r\nUntil now.",
             "parentName": "",
             "codexSecret": true,
             "excludeFromCodex": true
@@ -179,7 +201,7 @@
         {
             "uniqueName": "/Lotus/Types/Keys/NewWarQuest/NewWarQuestKeyChain",
             "name": "The New War",
-            "description": "The Sentient armada has emerged from the Veil Proxima in shocking numbers.\r\rAt their head, Natah, once the trusted guide 'Lotus', now seemingly in thrall to Ballas and her brother Erra.\r\rAcross worlds and space, the Tenno and their unlikely alliance launch a final assault to take the Sentient mothership... where Natah awaits.",
+            "description": "The Sentient armada has emerged from the Veil Proxima in shocking numbers.\r\n\r\nAt their head, Natah, once the trusted guide 'Lotus', now seemingly in thrall to Ballas and her brother Erra.\r\n\r\nAcross worlds and space, the Tenno and their unlikely alliance launch a final assault to take the Sentient mothership... where Natah awaits.",
             "parentName": "",
             "codexSecret": true
         },
@@ -247,9 +269,16 @@
             "codexSecret": false
         },
         {
+            "uniqueName": "/Lotus/Types/Keys/TauPrequel/TauPrequelQuestKeyChain",
+            "name": "The Old Peace",
+            "description": "Albrecht Entrati's trail leads beyond the Origin System. Only by delving into the past can the path ahead be made clear - but buried secrets can be deadly.",
+            "parentName": "",
+            "codexSecret": false
+        },
+        {
             "uniqueName": "/Lotus/Types/Keys/VorsPrize/VorsPrizeQuestKeyChain",
             "name": "Vor's Prize",
-            "description": "MY QUEENS -\r\rYou were right, the Tenno threat is real. We found one drifting near Earth but the Lotus knew we were coming. She purged the Cryo moments before we had them and sent a squad of Tenno to break our assault.\r\rThey escaped. We are working on tracing them. Separate this Tenno from the flock and it should be easy to kill. We shattered its Warframe and expect such an abrupt Cryo purge will have damaged its memories.\r\rWe anxiously await punishment for failing this task.\r\r- VOR",
+            "description": "MY QUEENS -\r\n\r\nYou were right, the Tenno threat is real. We found one drifting near Earth but the Lotus knew we were coming. She purged the Cryo moments before we had them and sent a squad of Tenno to break our assault.\r\n\r\nThey escaped. We are working on tracing them. Separate this Tenno from the flock and it should be easy to kill. We shattered its Warframe and expect such an abrupt Cryo purge will have damaged its memories.\r\n\r\nWe anxiously await punishment for failing this task.\r\n\r\n- VOR",
             "parentName": "",
             "codexSecret": false
         },
@@ -287,14 +316,6 @@
             "description": "Unlocks access to your Clan's Dojo",
             "parentName": "/Lotus/Types/Game/KeyItem",
             "codexSecret": true
-        },
-        {
-            "uniqueName": "/Lotus/Types/Keys/SortieBossKeyInfestedAladV",
-            "name": "Mutalist Alad V Assassinate",
-            "description": "Put an end to Alad V and his Mutalist experiments",
-            "parentName": "/Lotus/Types/Keys/InfestedAladVQuest/AssassinateInfestedAladVKey",
-            "codexSecret": true,
-            "excludeFromCodex": true
         }
     ]
 }
